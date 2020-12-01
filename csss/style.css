@@ -24,9 +24,39 @@ padding: 20px 0;
     background: #9575cd;
     color: floralwhite;
 }
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+.navbar-dark
+{
+    background: #512da8;
+}
 .address
 {
     font-size: 80%;
     margin: 0px;
     color: #0f0f0f;
+}
+@media(max-width:576px)
+{
+    p
+    {
+        text-align:justify;
+    }
+ h3
+ {
+     text-align: center;
+     padding-bottom: 10px;
+     width: 100%;
+ }
+ h2
+ {
+     text-align: center;
+     padding-bottom: 10px;
+ }
+ h1
+ {
+     text-align: center;
+ }
 }
