@@ -32,12 +32,24 @@ body{
 {
     background: #512da8;
 }
+
+.tab-content
+{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
 .address
 {
     font-size: 80%;
     margin: 0px;
     color: #0f0f0f;
 }
+
+
+
 @media(max-width:576px)
 {
     p
@@ -59,4 +71,16 @@ body{
  {
      text-align: center;
  }
+}
+
+@media(max-width:600px)
+{
+#reserve .form-group
+{
+justify-content: center !important;
+}
+#reserve .r-btn
+{
+    text-align: center;
+}
 }
