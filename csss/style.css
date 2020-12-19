@@ -62,6 +62,20 @@ body{
     min-height: 300px;
 }
 
+#reserveModal
+{
+
+}
+#carouselButton
+{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.rb .col-1 
+{
+text-align: center;
+}
 @media(max-width:576px)
 {
     p
