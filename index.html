@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="csss/style-old.css">
-
+    <link rel="stylesheet" href="csss/style-assignment.css">
     <link rel="stylesheet" href="bootstrap-social-gh-pages/bootstrap-social.css">
     <link rel="stylesheet" href="bootstrap-social-gh-pages/node_modules/font-awesome/css/font-awesome.min.css">
 
@@ -38,7 +38,7 @@
     
 </ul>
 <span class="navbar-text">
-<a href="" data-toggle="modal" data-target="#loginModal">
+<a id="loginbutton" href="#">
 <span class="fa fa-sign-in"></span> Login
 
 </a>
@@ -56,7 +56,7 @@
 
 <div class="modal-header">
     <h4 class="modal-title">Login  </h4>
-    <button type="button"  class="close" data-dismiss="modal">
+    <button type="button"  class="close">
     &times;
 
     </button>
@@ -107,7 +107,7 @@
     
     <div class="modal-header">
         <h4 class="modal-title">Reserve a Table  </h4>
-        <button type="button"  class="close" data-dismiss="modal">
+        <button type="button"  class="close">
         &times;
     
         </button>
@@ -224,7 +224,7 @@
                 </div>
                 <div class="col-12 col-sm-3 align-self-center" style="text-align: right;">
                 
-                    <a role="button" href="#reserveModal" data-toggle="modal" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+                    <a id="reserveButton" role="button" href="#"  data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
                         data-placement="top" style="color: black;"> 
                     <button type="submit" class="btn btn-warning" 
                      style="padding: .5rem 4rem;" >Reserve Table</button></a>
@@ -558,6 +558,50 @@ $('#carouselButton').click(function()
 
 });
 
+</script>
+
+<script>
+
+   $(document).ready(function(){
+
+    $('#loginbutton').click(function()
+    {
+        $('#loginModal').modal('show');
+
+    });
+
+
+   });
+   
+</script>
+
+<script>
+
+    $(document).ready(function(){
+ 
+     $('#reserveButton').click(function()
+     {
+         $('#reserveModal').modal('show');
+ 
+     });
+ 
+ 
+    });
+    
+ </script>
+
+<script>
+
+    $(document).ready(function()
+    {
+
+    $('.modal-header').children('button').click(function()
+    {
+     $('#loginModal').modal('hide');
+     $('#reserveModal').modal('hide');
+    });    
+
+    });
 </script>
 
     
